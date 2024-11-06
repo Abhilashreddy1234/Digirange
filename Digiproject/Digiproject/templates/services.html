@@ -1,0 +1,62 @@
+{% load cms_tags sekizai_tags menu_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digi Range About Us</title>
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+    {% render_block "css" %}
+</head>
+<body>
+  {% cms_toolbar %}
+<section lass="Services1">
+  <div class="container">
+    <div class="row1">
+      <div class="service1">
+        <img src="{% static 'assets/img/services-images/SearchImage.webp' %}" alt="SEO">
+        <h1>SEO</h1>
+        {% block content1 %}
+        {% placeholder "content1" %}
+        {% endblock content1 %}
+      </div>
+      <div class="service1">
+        <img src="{% static 'assets/img/services-images/PPC.webp' %}" alt="Marketing">
+        <h1>Pay Per Click</h1>
+        <p></p>
+        {% block content2 %}
+        {% placeholder "content2" %}
+        {% endblock content2 %}
+      </div>
+      <div class="service1">
+        <img src="{% static 'assets/img/services-images/content-marketing.webp' %}" alt="Content">
+        <h1>Content Marketing</h1>
+        <p></p>
+        {% block content3 %}
+        {% placeholder "content3" %}
+        {% endblock content3 %}
+      </div>
+      <div class="service1">
+        <img src="{% static 'assets/img/services-images/SocialMediaImage.webp' %}" alt="Social Media">
+        <h1>Social Media Marketing</h1>
+        <p></p>
+        {% block content4 %}
+        {% placeholder "content4" %}
+        {% endblock content4 %}
+      </div>
+      <div class="service1">
+        <img src="{% static 'assets/img/services-images/Emailmarketing.webp' %}" alt="Email">
+        <h1>Email Marketing</h1>
+        <p></p>
+        {% block content5 %}
+        {% placeholder "content5" %}
+        {% endblock content5 %}
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
+   
+

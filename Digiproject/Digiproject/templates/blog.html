@@ -1,0 +1,60 @@
+{% load cms_tags sekizai_tags menu_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies</title>
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+    {% render_block "css" %}
+</head>
+<body>
+    {% cms_toolbar %}
+    <header>
+        <div>
+            {% block content1 %}
+            {% placeholder "content1" %}
+        </div>
+    </header>
+    <main>
+        <div class="blog-page">
+            <h1>Blog Page</h1>
+            <section class="article-section">
+                <h2>Latest Digital Marketing Articles</h2>
+                <div class="categories">
+                    <span>Categories: SEO, PPC, Social Media, Content Marketing</span>
+                </div>
+                <div class="article-list">
+                    <article class="blog-article">
+                        <h3>Article Title 1</h3>
+                        <p>article content</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </article> 
+                    <article class="blog-article">
+                        <h3>Article Title 2</h3>
+                        <p></p>
+                        <a href="#" class="read-more">Read More</a>
+                    </article>
+                </div>
+            </section>
+            <section class="author-section">
+                <h2>Meet the Authors</h2>
+                <div class="author-list">
+                    <div class="author">
+                        <img src="{% static 'images/author1.jpg' %}">
+                        <h3>Author 1</h3>
+                        <p></p>
+                    </div>
+                    <div class="author">
+                        <img src="{% static 'images/author2.jpg' %}">
+                        <h3>Author 2</h3>
+                        <p></p>
+                        {% endblock %}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

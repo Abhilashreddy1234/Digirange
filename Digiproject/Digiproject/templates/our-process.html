@@ -1,0 +1,42 @@
+{% load cms_tags sekizai_tags menu_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Our Process</title>
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+    {% render_block "css" %}
+</head>
+<body>
+    {% cms_toolbar %}
+    <section class="our-process1">
+        <div class="our-process">
+            <div class="step0">
+                <h1>Our Process</h1>
+                {% block content %}
+                {% placeholder "content" %}
+                {% endblock content %}
+            </div>
+            
+            <div class="step" id="step1">
+                <h3>1. Consultation</h3>
+                <p>We begin by understanding your needs and goals through a thorough consultation.</p>
+            </div>
+            <div class="step" id="step2">
+                <h3>2. Strategy Development</h3>
+                <p>Next, we create a tailored strategy to meet your objectives.</p>
+            </div>
+            <div class="step" id="step3">
+                <h3>3. Campaign Execution</h3>
+                <p>Our team then implements the strategy, ensuring each action is effective.</p>
+            </div>
+            <div class="step" id="step4">
+                <h3>4. Monitoring and Execution</h3>
+                <p>We continuously monitor and optimize the campaign for the best results.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
