@@ -15,6 +15,7 @@
         <div>
             {% block content1 %}
             {% placeholder "content1" %}
+            {% endblock content1 %}
         </div>
     </header>
     <main>
@@ -30,11 +31,17 @@
                         <h3>Article Title 1</h3>
                         <p>article content</p>
                         <a href="#" class="read-more">Read More</a>
+                        {% block content2 %}
+                        {% placeholder "content2" %}
+                        {% endblock content2 %}
                     </article> 
                     <article class="blog-article">
                         <h3>Article Title 2</h3>
                         <p></p>
                         <a href="#" class="read-more">Read More</a>
+                        {% block content3 %}
+                        {% placeholder "content3" %}
+                        {% endblock content3 %}
                     </article>
                 </div>
             </section>
@@ -50,7 +57,6 @@
                         <img src="{% static 'images/author2.jpg' %}">
                         <h3>Author 2</h3>
                         <p></p>
-                        {% endblock %}
                     </div>
                 </div>
             </section>

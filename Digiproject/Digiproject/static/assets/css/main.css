@@ -701,7 +701,7 @@ body {
 .case-studies {
   padding: 2em;
   background-color: #f9f9f9;
-} 
+}
 
 .case-studies h1 {
   font-size: 2em;
@@ -820,4 +820,37 @@ body {
 .author p {
   font-size: 0.9em;
   color: #666;
+}
+.blogs {
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  height:auto;
+  justify-content: space-between;
+}
+
+.blog1 {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  display:flex;
+  justify-content: space-around;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.blog1 img {
+  max-width: 100%;
+  height: 40%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  justify-content:space-between;
+}
+
+.blog1 p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  margin: 10px 0;
 }
