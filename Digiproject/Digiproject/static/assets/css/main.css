@@ -849,3 +849,15 @@ body {
   line-height: 10rem;
   margin: 10px 0;
 }
+.About-Blogs{
+  display:flex;
+  background-color: lightblue;
+}
+.proposal-button{
+  color:red;
+  padding:10px 20px;
+}
+.proposal-button:hover{
+  color:red;
+  background:red;
+}
