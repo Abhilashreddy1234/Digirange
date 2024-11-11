@@ -21,10 +21,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0px 20px;
   background-color: white;
   position:fixed;
-  top: 0px;
+  top: 43px;
   left: 0;
   right: 0;
   z-index: 1000;
@@ -38,18 +38,22 @@ body {
 }
 
 .navbar-brand img {
-  height: 60px;
+  height: 100px; /* Increase height to exceed navbar */
+  margin-top: -6px; /* Move the image up */
+  margin-bottom: -20px; /* Move the image down */
   margin-right: 10px;
   border-radius: 50%;
   background-color: darkgoldenrod;
   padding: 5px;
-  border:0px;
+  border: 0px;
 }
+
 
 .navbar-text {
   display: flex;
   flex-direction: column;
   color: #333;
+  margin-left: 0px;
 }
 
 .navbar-text .line1 {
@@ -217,6 +221,10 @@ body, html {
 .why-choose-us-section {
   padding: 50px 20px;
   background-color:cornsilk;
+  box-shadow: 0 0 10px;
+}
+.container{
+  box-shadow: 0 0 10px;
 }
 
 .top-content {
@@ -274,9 +282,13 @@ body, html {
   position: relative; 
   width: 100%; 
   height: 100vh;
+
 }
 .text-on-background h1,h2{
-  color:black;
+  color:white;
+}
+.text-on-background{
+  box-shadow:0 0 10px;
 }
 .button3{
 padding: 10px 20px; 
@@ -285,15 +297,16 @@ color:black;
 background-color: red;
 }
 .footer {
-  background-color: #f8f9fa;
+  background-color: silver;
   padding: 40px 0;
+  height:auto;
 }
 
 .footer-top {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -389,42 +402,47 @@ background-color: red;
 /* About Us Section */
 
 .about-us-section {
-  width:100%;
-  margin-left:0px;
-  margin-right:0px;
-  background-color: #E64A19;
+  width: 100%;
+  padding: 60px 0;
+  background: cornsilk;
+  color: #fff;
 }
 
 .content-wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  width:100%;
+  justify-content: space-around;
+  max-width: 1200px;
   margin: 0 auto;
   gap: 40px;
-  background-color: cornsilk;
 }
 .about-us-text {
   flex: 1;
-  color: #333;
+  max-width: 600px;
 }
 
 .about-us-text h1 {
-  font-size: 2.5rem;
-  color: #007bff; 
+  font-size: 3rem;
+  color: black;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: black;
+  padding-bottom: 10px;
 }
 
 .about-us-text h2 {
   font-size: 1.8rem;
-  color: #333;
+  color: black;
   margin-top: 30px;
+  font-style: italic;
 }
 
 .about-us-text p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: black;
   margin-bottom: 20px;
 }
 
@@ -434,28 +452,63 @@ background-color: red;
 }
 
 .about-us-text ul li {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 10px;
+  color: black;
 }
+
+/* About Us Image Styling */
 .about-us-image {
   flex: 1;
-  text-align: right;
+  max-width: 400px;
+  text-align: center;
 }
 
 .about-us-image img {
   max-width: 100%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
-  .about-us-image {
-      margin-top: 30px;
-      text-align: center;
+
+.about-us-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Additional Layout and Responsive Styling */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
   }
+
+  .about-us-text, .about-us-image {
+    max-width: 100%;
+  }
+
+  .about-us-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-us-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-us-text p, .about-us-text ul li {
+    font-size: 1rem;
+  }
+}
+
 .Team-Members { 
   display:flex;
   justify-content: space-between;
   padding:20px 0px;
   border:10px;
   flex-direction: row;
+  background-color: cornsilk;
+}
+.Team{
+  background-color: cornsilk;
 }
 .team1{
   text-align:center;
@@ -465,12 +518,13 @@ background-color: red;
   flex-direction: column;
   border-radius:0px;
   margin:0px;
+  background-color: cornsilk;
 
 }
 .team1 img{
   height:200px;
   width:200px;
-  background-color: #666;
+  background-color: silver;
   margin-bottom:10px;
   border:0px;
   border-radius:0px;
@@ -525,7 +579,7 @@ background-color: red;
 .testimonials-section {
   padding: 60px 0;
   text-align: center;
-  background-color:darksalmon;
+  background-color:cornsilk;
 }
 .section-title {
   font-size: 2em;
@@ -594,12 +648,14 @@ background-color: red;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width:100%;
 }
 
 .row1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width:100%;
 }
 
 .service1 {
@@ -625,9 +681,10 @@ background-color: red;
 .service1 img {
   width: 100%;
   height: auto;
-  max-width: 250px; 
+  max-width: 350px; 
   margin-bottom: 15px;
   border-radius: 5px;
+  background-color: cornsilk;
 }
 .service1 h1 {
   font-size: 22px;
@@ -660,7 +717,9 @@ background-color: red;
 }
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
+  background-color:cornsilk;
+  margin-top: 0px;
+  margin-top: 50px;
 }
 
 .our-process1 {
@@ -859,5 +918,16 @@ body {
 }
 .proposal-button:hover{
   color:red;
-  background:red;
+  background:black;
+}
+.About-Blogs img{
+  height:100px;
+  width:100px;
+  margin-right: 0px;
+}
+.lead-talk{
+  margin-left: 0px;
+  margin-top:0px;
+  margin-right:0px;
+  padding:0px;
 }

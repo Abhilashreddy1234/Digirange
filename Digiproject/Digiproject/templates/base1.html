@@ -1,9 +1,11 @@
 {% load cms_tags menu_tags sekizai_tags %}
 {% load static %}
-<!DOCTYPE html>
+
+
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digi Range Marketing</title>
     <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
@@ -115,17 +117,165 @@
         </div>
     </section>
     <div class="background-image1" >
-        <img src="{% static 'assets/img/getting-ready-image.jpg' %}" alt="background image" style="width: 100%; height: 100%; object-fit: cover;">
+        <img src="{% static 'assets\img\digiimages3.png' %}">
         
         <div class="text-on-background" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
             <h1>Call-To-Action</h1>
             <h2>Ready to Boost your Online Presence</h2>
             <button class="button3" style="padding: 10px 20px; font-size: 18px;">Get Started Today</button>
         </div>
+    </div>     
+<!-- aboutus page -->
+<section class="Main-Section">
+    <section class="about-us-section">
+        <div class="content-wrapper">
+            <div class="about-us-text">
+                <h1>About Us</h1>
+                <p>We specialize in providing comprehensive digital marketing services tailored to grow your business online.</p>
+                <h2>Our Mission</h2>
+                <p>To empower businesses through cutting-edge digital marketing strategies, delivering measurable results and driving growth.</p>
+                <h2>Our Values</h2>
+                <ul>
+                    <li>Customer Focus</li>
+                    <li>Innovation</li>
+                    <li>Transparency</li>
+                    <li>Results-Driven Approach</li>
+                </ul>
+                {% block content %}
+                {% placeholder "feature" %}
+                {% placeholder "content" %}
+                {% placeholder "splashbox" %}
+                {% endblock content %}
+            </div>
+            <div class="about-us-image">
+                <img src="{% static 'assets/img/icons/about-us1.webp' %}" alt="Digi Range Marketing Logo">
+            </div>
+        </div>
+    </section>
+    <section class="Team">
+        <h1>Leadership Team</h1>
+    </section>
+    <section class="Team-Members">
+        <div class="team1">
+            <img src="{% static '' %}" alt="team member1">
+            <h3>Vikranth</h3>
+            <h3>CEO/Co  founder</h3>
+        </div>
+        <div class="team1">
+            <img src="{% static '' %}" alt="team member2">
+            <h3>Goutham<h3>
+            <h3>CEO/Co founder</h3>
+        </div>
+        <div class="team1">
+            <img src="{% static '' %}" alt="team member3">
+            <h3>Rupendhar</h3>
+            <h3>CEO/Co founder</h3>
+        </div>
+    </section>
+    <section class="Developer-team">
+        <h1> Management & Team Leads</h1>
+    </section>
+    <section class="Team-members1">
+        <div class="team2">
+            <img src="{% static '' %}" alt="Team Member">
+            <h3>Abhilash</h3>
+            <h3>Team Lead</h3>
+        </div>
+        <div class="team2">
+            <img src="{% static '' %}" alt="team member2">
+            <h3>Surendra<h3>
+            <h3>Full stack developer</h3>
+        </div>
+        <div class="team2">
+            <img src="{% static '' %}" alt="team member3">
+            <h3>Joseph</h3>
+            <h3>UI/UX Designer</h3>
+        </div>
+    </section>
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            
+            <div class="testimonial-wrapper">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Digi Range Marketing has exceeded our expectations. The team was professional, efficient, and brought great ideas to the table."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="{% static '' %}" alt="Client 1" class="author-img">
+                        <h4>John Doe</h4>
+                        <p>Managing Director </p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Their services helped us grow our online presence and reach more customers. We are extremely happy with the results."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="path/to/client2.jpg" alt="Client 2" class="author-img">
+                        <h4>Jane Smith</h4>
+                        <p>Marketing Director</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"We were impressed by their attention to detail and their commitment to delivering top-notch services."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="path/to/client3.jpg" alt="Client 3" class="author-img">
+                        <h4>Robert Williams</h4>
+                        <p> Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<section lass="Services1">
+    <div class="container">
+      <div class="row1">
+        <div class="service1">
+          <img src="{% static 'assets/img/services-images/SearchImage.webp' %}" alt="SEO">
+          <h1>SEO</h1>
+          {% block content4 %}
+          {% placeholder "content4" %}
+          {% endblock content4 %}
+        </div>
+        <div class="service1">
+          <img src="{% static 'assets/img/services-images/PPC.webp' %}" alt="Marketing">
+          <h1>Pay Per Click</h1>
+          <p></p>
+          {% block content5 %}
+          {% placeholder "content5" %}
+          {% endblock content5 %}
+        </div>
+        <div class="service1">
+          <img src="{% static 'assets/img/services-images/content-marketing.webp' %}" alt="Content">
+          <h1>Content Marketing</h1>
+          <p></p>
+          {% block content6 %}
+          {% placeholder "content6" %}
+          {% endblock content6 %}
+        </div>
+        <div class="service1">
+          <img src="{% static 'assets/img/services-images/SocialMediaImage.webp' %}" alt="Social Media">
+          <h1>Social Media Marketing</h1>
+          <p></p>
+          {% block content7 %}
+          {% placeholder "content7" %}
+          {% endblock content7 %}
+        </div>
+        <div class="service1">
+          <img src="{% static 'assets/img/services-images/Emailmarketing.webp' %}" alt="Email">
+          <h1>Email Marketing</h1>
+          <p></p>
+          {% block content8 %}
+          {% placeholder "content8" %}
+          {% endblock content8 %}
+        </div>
+      </div>
     </div>
-    
-
-
+  </section>
 <footer id="footer" class="footer">
         <div class="container footer-top">
             <div class="footer-about">
