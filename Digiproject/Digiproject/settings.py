@@ -246,3 +246,12 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+ADMIN_EMAIL = '20eg110119@anurag.edu.in'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 443
+EMAIL_USE_SSL = True
+EMAIL_USE_TLS = False
+EMAIL_HOST_USER = '20eg110119@anurag.edu.in'
+EMAIL_HOST_PASSWORD ='zhuemzquhquxtqyb'
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

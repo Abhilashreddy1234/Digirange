@@ -28,7 +28,6 @@ body {
   right: 0;
   z-index: 9999999;
 }
-
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -37,9 +36,9 @@ body {
 }
 
 .navbar-brand img {
-  height: 100px; /* Increase height to exceed navbar */
-  margin-top: -6px; /* Move the image up */
-  margin-bottom: -20px; /* Move the image down */
+  height: 100px;
+  margin-top: -6px; 
+  margin-bottom: -20px; 
   margin-right: 10px;
   border-radius: 50%;
   background-color: darkgoldenrod;
@@ -1041,4 +1040,41 @@ body {
   margin-top:0px;
   margin-right:0px;
   padding:0px;
+}
+#contact-section {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
 }
