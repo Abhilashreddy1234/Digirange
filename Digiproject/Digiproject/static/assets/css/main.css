@@ -832,6 +832,7 @@ body {
   margin-top: 50px;
 }
 
+
 .our-process1 {
   display: flex;
   justify-content: center;
@@ -1041,9 +1042,10 @@ body {
   margin-right:0px;
   padding:0px;
 }
-#contact-section {
-  width: 50%;
-  margin: auto;
+/* contact us css */
+.contact-section {
+  width: 60%;
+  margin: 50px auto;
   text-align: center;
 }
 
@@ -1051,30 +1053,71 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-bottom: 30px;
 }
 
-.contact-form input, .contact-form textarea {
-  padding: 10px;
-  border: 2px solid #ccc;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1em;
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
-  border-color: #007BFF;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-.contact-form button {
-  padding: 10px;
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
   border: none;
   border-radius: 5px;
-  background-color: #007BFF;
-  color: white;
-  font-size: 1em;
   cursor: pointer;
 }
 
-.contact-form button:hover {
+button[type="submit"]:hover {
   background-color: #0056b3;
+}
+
+.contact-info {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.office {
+  margin-bottom: 20px;
+}
+
+.office h3 {
+  font-size: 1.2em;
+  color: #007bff;
+}
+
+.office p {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  color: #555;
+}
+
+.icon {
+  margin-right: 8px;
+  font-size: 1.2em;
 }
