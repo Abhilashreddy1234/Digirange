@@ -33,9 +33,6 @@ def contact_view(request):
             [settings.ADMIN_EMAIL],
             fail_silently=False,
         )
-
-        # Show success message and redirect
         messages.success(request, "Your message has been sent successfully.")
         return redirect('contact-us')
-
     return render(request, 'contact-us.html')
