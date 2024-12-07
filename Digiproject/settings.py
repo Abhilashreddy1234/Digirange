@@ -28,9 +28,7 @@ SECRET_KEY = 'n8b8@-xi1q=r)s(x9ho@gt0x5wz8ibkv@#lra&52-j79n1)x=j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
+ALLOWED_HOSTS = ['digirange-9.onrender.com', 'localhost', '127.0.0.1']
 # Application definition
 
 
