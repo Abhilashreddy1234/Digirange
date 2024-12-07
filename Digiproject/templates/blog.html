@@ -1,0 +1,110 @@
+{% load cms_tags sekizai_tags menu_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies</title>
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+    {% render_block "css" %}
+</head>
+<body>
+    {% cms_toolbar %}
+    <main>
+        <header>
+            <nav class="navbar navbar-light bg-light">
+                <div class="navbar-brand">
+                    <img src="{% static 'assets/img/WhatsApp Image 2024-09-26 at 16.27.37.jpeg' %}" alt="Digi Range Marketing Logo">
+                    <div class="navbar-text">
+                        <span class="line1">DIGI RANGE</span>
+                        <span class="line2">Marketing</span>
+                    </div>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/about-us/">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/services/">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/our-process/">Our Process</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/case-studies/">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact-us/">Contact Us</a></li>
+                </ul>
+        
+            </nav>
+        </header>
+<div class="blog-page">
+            <h1>Blog Page</h1>
+            <section class="article-section">
+                <h2>Latest Digital Marketing Articles</h2>
+                <div class="categories">
+                    <span>Categories: SEO, PPC, Social Media, Content Marketing</span>
+                </div>
+                <div class="article-list">
+                    <article class="blog-article">
+                        <h3>Article Title 1</h3>
+                        <p>article content</p>
+                        <a href="#" class="read-more">Read More</a>
+                        {% block content2 %}
+                        {% placeholder "content2" %}
+                        {% endblock content2 %}
+                    </article> 
+                    <article class="blog-article">
+                        <h3>Article Title 2</h3>
+                        <p></p>
+                        <a href="#" class="read-more">Read More</a>
+                        {% block content3 %}
+                        {% placeholder "content3" %}
+                        {% endblock content3 %}
+                    </article>
+                </div>
+            </section>
+            <section class="author-section">
+                <h2>Meet the Authors</h2>
+                <div class="author-list">
+                    <div class="author">
+                        <img src="{% static 'images/author1.jpg' %}">
+                        <h3>Author 1</h3>
+                        <p></p>
+                    </div>
+                    <div class="author">
+                        <img src="{% static 'images/author2.jpg' %}">
+                        <h3>Author 2</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+            <div class="blogs">
+                <div class="blog1">
+                    <img src={% static '' %}>
+                    <p>Digi range is one of the most rewived Digital Marketing company</p>
+                </div>
+                <div class="blog1">
+                    <img src={% static '' %}>
+                    <p>organizing a summit in T-Hub</p>
+                </div>
+                <div class="blog1">
+                    <img src={% static '' %}>
+                    <p>Launching our new service Property management</p>    
+                </div>  
+            </div>
+        <div class="About-Blogs">
+        <div class="About-Blog">
+            <h1>About Your Digital Success</h1>
+            <p>Save  your time ,energy resources.if you are looking for Digital marketing we are here to to solve your business strategy please reach us we will discuss and solve your problem.</p>
+            <button class="proposal-button">get a proposal.</button> 
+        </div>
+        <div class="lead-talk">
+            <h2> Joseph</h2>
+            <h3>Marketing lead</h3>
+            <ol>Meta Certified Lead Trainer</ol>
+            <ol>12x Facebook Blueprint Certified</ol>
+            <ol>6x Google Ads & Microsoft Ads Certified</ol>
+            <ol>6x The Trade Desk Programmatic Certified</ol>
+            <ol>Google Analytics & Google Tag Manager Certified</ol>
+        </div>
+        <img src="{% static 'assets\img\team\team-1.jpg' %}">
+        </div>
+</div> 
+    </main>
+</body>
+</html>

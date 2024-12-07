@@ -1,0 +1,78 @@
+{% load cms_tags sekizai_tags menu_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Case Studies</title>
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+    {% render_block "css" %}
+</head>
+<body>
+    {% cms_toolbar %}
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="navbar-brand">
+                <img src="{% static 'assets/img/WhatsApp Image 2024-09-26 at 16.27.37.jpeg' %}" alt="Digi Range Marketing Logo">
+                <div class="navbar-text">
+                    <span class="line1">DIGI RANGE</span>
+                    <span class="line2">Marketing</span>
+                </div>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/about-us/">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="/services/">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="/our-process/">Our Process</a></li>
+                <li class="nav-item"><a class="nav-link" href="/case-studies/">Case Studies</a></li>
+                <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact-us/">Contact Us</a></li>
+            </ul>
+    
+        </nav>
+    </header>
+    <header>
+        <div>
+            {% block content1 %}
+            {% placeholder "content1" %}
+            {% endblock %}
+            <section class="case-studies">
+                <h1>Case Studies</h1>
+
+                <!-- Success Stories Section -->
+                <div class="success-stories">
+                    <h2>Success Stories</h2>
+                    <p></p>
+                    
+                    <div class="results-stats">
+                        <h3>Results &amp; Statistics</h3>
+                        <ul>
+                            <li>Increased engagement by 75%</li>
+                            <li>Conversion rate improved by 50%</li>
+                            <li>Revenue growth of $200k in 3 months</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="testimonials">
+                        <h3>Client Testimonials</h3>
+                        <blockquote>
+                            "Working with Digi Range transformed our marketing approach and exceeded our expectations!"
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!-- Industry-Specific Case Studies Section -->
+                <div class="industry-case-studies">
+                    <h2>Industry-Specific Case Studies</h2>
+                    <p>Explore our case studies organized by industry:</p>
+                    <ul>
+                        <li>Healthcare - Improved patient engagement by 40%</li>
+                        <li>E-commerce - Increased sales by 60% with personalized campaigns</li>
+                        <li>Finance - Boosted lead generation by 30% through targeted ads</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </header>
+</body>
+</html>
